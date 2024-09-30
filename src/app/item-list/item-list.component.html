@@ -1,0 +1,16 @@
+<div class="item-list">
+    <h2>item List</h2>
+    
+    <div *ngIf="itemList.length === 0">
+      <p>Loading items...</p>
+    </div>
+  
+    <div *ngFor="let item of itemList" class="item-card">
+      <img [src]="item.image" alt="{{ item.title }}" class="item-image">
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <p>Price: ${{ item.price }}</p>
+      <p>Rating: {{ item.rating?.rate }} ({{ item.rating?.count }} reviews)</p>
+    </div>
+  </div>
+  
