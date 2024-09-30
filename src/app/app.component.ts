@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 import { CreatelistComponent } from './features/Createlist/Createlist.component';
-import { ItemListComponent } from './item-list/item-list.component';
+import { ItemListComponent } from './features/item-list/item-list.component';
 
 @Component({
   selector: 'app-root',
