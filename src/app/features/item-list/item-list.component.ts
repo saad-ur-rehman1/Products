@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { NgxPaginationModule } from 'ngx-pagination'; // Import NgxPaginationModule
 import { FormsModule } from '@angular/forms'; // For search input
 import { Router } from '@angular/router';
-import { EditItemComponent } from '../../edit-item/edit-item.component';
+import { EditItemComponent } from '../edit-item/edit-item.component';
 
 @Component({
   selector: 'app-item-list',
