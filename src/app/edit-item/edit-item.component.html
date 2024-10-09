@@ -1,0 +1,19 @@
+<div class="edit-item">
+    <h2>Edit Item</h2>
+    <form (ngSubmit)="onUpdate()">
+      <label for="title">Title:</label>
+      <input type="text" id="title" [(ngModel)]="item.title" name="title" required>
+  
+      <label for="description">Description:</label>
+      <textarea id="description" [(ngModel)]="item.description" name="description" required></textarea>
+  
+      <label for="price">Price:</label>
+      <input type="number" id="price" [(ngModel)]="item.price" name="price" required>
+  
+      <label for="image">Image URL:</label>
+      <input type="text" id="image" [(ngModel)]="item.image" name="image" required>
+  
+      <button type="submit">Update Item</button>
+    </form>
+  </div>
+  

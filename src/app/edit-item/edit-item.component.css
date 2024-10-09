@@ -1,0 +1,45 @@
+.edit-item {
+    max-width: 400px; /* Set a maximum width for the form */
+    margin: 20px auto; /* Center the form on the page */
+    padding: 20px; /* Add padding inside the form */
+    border: 1px solid #ccc; /* Add a border around the form */
+    border-radius: 8px; /* Round the corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.edit-item h2 {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.edit-item label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Make labels bold */
+}
+
+.edit-item input,
+.edit-item textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ccc; /* Border around inputs */
+    border-radius: 4px; /* Round the corners */
+    font-size: 14px; /* Font size for inputs */
+}
+
+.edit-item button {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Padding inside the button */
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Round the corners */
+    font-size: 16px; /* Font size for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.edit-item button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
