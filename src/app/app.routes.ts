@@ -6,5 +6,5 @@ import { EditItemComponent } from './features/edit-item/edit-item.component';
 export const routes: Routes = [
     { path: 'item', component: ItemListComponent },
     { path: 'createitem', component: CreateitemComponent },
-    { path: 'edit-item/:id', component: EditItemComponent }, // Add this route for editing items
+    { path: 'edititem/:id', component: EditItemComponent }
 ];

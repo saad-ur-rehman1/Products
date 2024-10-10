@@ -17,7 +17,7 @@ import { CreateitemComponent } from './features/Createitem/Createitem.component'
 
 export class AppComponent 
  {
-
+title = " Hello"
 
   }
   

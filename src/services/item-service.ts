@@ -6,7 +6,7 @@ import { Observable } from "rxjs";
     providedIn: 'root'
 })
 export class ItemService {
-    private apiUrl = 'https://fakestoreapi.com/products'; // Correct API endpoint for products
+    private apiUrl = 'https://fakestoreapi.com/products';
 
     constructor(private http: HttpClient) {}
 

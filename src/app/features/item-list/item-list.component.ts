@@ -4,12 +4,11 @@ import { CommonModule } from '@angular/common';
 import { NgxPaginationModule } from 'ngx-pagination'; // Import NgxPaginationModule
 import { FormsModule } from '@angular/forms'; // For search input
 import { Router } from '@angular/router';
-import { EditItemComponent } from '../edit-item/edit-item.component';
 
 @Component({
   selector: 'app-item-list',
   standalone: true,
-  imports: [CommonModule, NgxPaginationModule, FormsModule,EditItemComponent], // Include NgxPaginationModule
+  imports: [CommonModule, NgxPaginationModule, FormsModule], // Include NgxPaginationModule
   templateUrl: './item-list.component.html',
   styleUrls: ['./item-list.component.css']
 })
@@ -37,9 +36,10 @@ export class ItemListComponent {
       }
     });
   }
- editItem(itemId: string): void {
-    this.router.navigate(['/edit-item', itemId]); // Navigate to EditItemComponent
+  editItem(id: string) {
+    this.router.navigate(['/edititem', id]); // Navigate to the edit item route with the item ID
   }
+  
   onDelete(index: number): void {
     const confirmed = confirm('Are you sure you want to delete this item?');
     if (confirmed) {
